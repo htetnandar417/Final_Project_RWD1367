@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  animation: bgColor 20s linear infinite;
+}
+@keyframes bgColor {
+  0% {
+    background: #000;
+  }
+  25% {
+    background: #2596be;
+  }
+  50% {
+    background: #4dbcd8;
+  }
+  75% {
+    background: #72b2c7;
+  }
+  100% {
+    background: #71a3b3;
+  }
+}
+.bg {
+  width: 100%;
+  height: 100%;
+}
+.bg span {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+}
+@keyframes animateSquare {
+  0% {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+.bg span:nth-child(3n + 1) {
+  background: transparent;
+  border: 5px solid #fff;
+}
+.bg span:nth-child(1) {
+  top: 50%;
+  left: 20%;
+  animation: animateSquare 10s linear infinite;
+}
+.bg span:nth-child(2) {
+  top: 80%;
+  left: 40%;
+  animation: animateSquare 12s linear infinite;
+}
+.bg span:nth-child(3) {
+  top: 10%;
+  left: 65%;
+  animation: animateSquare 15s linear infinite;
+}
+.bg span:nth-child(4) {
+  top: 50%;
+  left: 70%;
+  animation: animateSquare 6s linear infinite;
+}
+.bg span:nth-child(5) {
+  top: 10%;
+  left: 30%;
+  animation: animateSquare 9s linear infinite;
+}
+.bg span:nth-child(6) {
+  top: 90%;
+  left: 95%;
+  animation: animateSquare 8s linear infinite;
+}
+.bg span:nth-child(7) {
+  top: 80%;
+  left: 5%;
+  animation: animateSquare 5s linear infinite;
+}
+.bg span:nth-child(8) {
+  top: 35%;
+  left: 50%;
+  animation: animateSquare 14s linear infinite;
+}
+.bg span:nth-child(9) {
+  top: 5%;
+  left: 2%;
+  animation: animateSquare 11s linear infinite;
+}
+.bg span:nth-child(10) {
+  top: 25%;
+  left: 90%;
+  animation: animateSquare 10s linear infinite;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15%;
+}
+.wrapper {
+  width: 350px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+.form h2 {
+  position: relative;
+  color: #0b0e0d;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+img {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 85px;
+}
+.form .inputBox {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+.form .inputBox input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.form .inputBox input::placeholder {
+  color: #e4fcf9;
+}
+.placeicon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+
+.form .inputBox button {
+  position: relative;
+  width: 155px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form .inputBox button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 16px;
+  backdrop-filter: blur(30px);
+}
+.form .inputBox button:hover a {
+  letter-spacing: 3px;
+  color: #324e7b;
+}
+.form .inputBox button a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+.form .inputBox button:hover a::before {
+  transform: skewX(45deg) translateX(110%);
+}
+.form .inputBox button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #e4fcf9;
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.form .inputBox button:hover::before {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+.bg p {
+  position: absolute;
+  bottom: 92%;
+  padding-top: 10px;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  background-color: rgb(241, 5, 5);
+  color: #fff;
+  display: none;
+}
